@@ -1,7 +1,7 @@
 using MassInstallAction
 using GitHub
 
-auth = GitHub.authenticate("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")
+auth = GitHub.authenticate(error("You need an authorization token"))
 
 orgrepos, page_data = GitHub.repos("JuliaPOMDP")
 # display([r.name for r in orgrepos])
